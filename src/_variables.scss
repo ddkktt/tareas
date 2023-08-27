@@ -4,6 +4,18 @@ $third-color: #f8aa4b;
 $fourth-color: #54d2d2;
 $font-color:  #ffcb00;
 $nav-bar-hover-color: #f8aa4b;
+$is-dark-mode: true;
+
+
+  @if $is-dark-mode {
+    $bckg-color:darken(#361d32, 20%) ;
+    $secondary-color:darken(#543c52, 20%) ;
+    $third-color: darken( #f8aa4b,45%);
+    $fourth-color: darken( #54d2d2,45%);
+    $font-color:  #edd2cb;
+    $nav-bar-hover-color: #f8aa4b;
+    
+  } 
 
 $mobile-size: 480px;
 $tablet-size: 768px;
