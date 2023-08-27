@@ -1,4 +1,4 @@
-# tareas
+# tarea1
 Pasos
 1. npm init
 2. npm install sass
