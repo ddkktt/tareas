@@ -1,0 +1,24 @@
+$bckg-color: #072448;
+$secondary-color: #ff6150;
+$third-color: #f8aa4b;
+$fourth-color: #54d2d2;
+$font-color:  #ffcb00;
+$nav-bar-hover-color: #f8aa4b;
+
+$mobile-size: 480px;
+$tablet-size: 768px;
+
+
+$display-type-off: none;
+
+@function generate-gradient($color1, $color2) {
+    @return linear-gradient(to top right,$color1, $color2);
+  }
+  
+$fs-background: generate-gradient($bckg-color, $secondary-color);
+
+@function generate-gradient-tablet($color1, $color2) {
+    @return linear-gradient(to top right,$color1, $color2);
+  }
+  
+$tablet-background: generate-gradient-tablet($bckg-color,$fourth-color);

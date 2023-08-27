@@ -1,0 +1,179 @@
+
+@import 'variables';
+
+
+@mixin center-style{
+    text-align: center;
+    
+}
+
+%text-styles{
+    font-size: 15px;
+    color: $font-color;
+    font-weight: 1px;
+}
+
+  
+body {
+  background: $fs-background;
+  font-family: sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;  
+  @extend %text-styles;
+}
+
+
+.dropdown{
+    display: #{$display-type-off};
+  }
+  .intro{
+    @include center-style;
+  }
+  .title{
+    @include center-style;
+      
+  }
+
+nav {
+  display: flex;
+  background-color: $bckg-color;
+  justify-content: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+   float: left;
+  }
+
+  a {
+    @extend %text-styles;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover {
+      background-color:$third-color ;
+      font-weight: bold;
+    }
+  }
+}
+
+.media {
+  margin-top: 5%;
+  margin-left: 5%;
+  max-width: 50%;
+}
+
+.description {
+  width: 50%;
+  height: auto;
+}
+
+.item-proyecto {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  max-height: 30%;
+  margin-top: 2%;  
+}
+
+#contacto {
+  list-style-type: none;
+}
+
+.sections {
+  margin: 50px;
+  text-align: center;
+}
+
+a:visited {
+  color: $fourth-color;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+    body {
+        background: $tablet-background;
+    }
+  .item-proyecto {
+    flex-flow: column;
+  }
+  
+  .description {
+    width: 100%;
+  }
+
+  .media {
+    width: 100%;
+    height: none;
+  }
+}
+
+@media (max-width: 800px) {
+    .dropbtn {
+        background-color:$secondary-color  ;
+        padding: 10px;
+        color: $bckg-color ;
+        font-weight: bold;
+      }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+
+    &:hover {
+      .dropdown-content {
+        display: block;
+      }
+    }
+  }
+
+  nav {
+    display: #{$display-type-off};
+  }
+  .dropdown-content{
+    display: #{$display-type-off};
+      position: absolute;
+      background-color: $bckg-color;
+      min-width: 160px;
+      z-index: 1;
+
+      a {
+        color: $secondary-color;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          background-color:$nav-bar-hover-color ;
+        }
+      }
+  }
+
+}
+
+$icon-images: (
+  icon1: '../images/c_icon.png',
+  icon2: '../images/GEEIcon.jpg',
+  icon3: '../images/ITESO.svg',
+  icon4: '../images/jsicon.png'
+ 
+);
+
+
+@each $icon, $path in $icon-images {
+    .icon-#{$icon} {
+      background-image: url('#{$path}');
+      width: 24px;  
+      height: 24px; 
+      display: inline-block;
+    }
+  }
+  

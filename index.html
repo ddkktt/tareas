@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css.map">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#int">Intro</a></li>
+              <li><a href="#casa">Casa Inteligente</a></li>
+              <li><a href="#barco">Barco</a></li>
+              <li><a href="#web">Pagina Web</a></li>
+              <li><a href="#gee">Aplicacion de Google Earth</a></li>
+              <li><a href="#Tecnologias">Tecnologias</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#int">Intro</a>
+                <a href="#casa">Casa Inteligente</a>
+                <a href="#barco">Barco</a>
+                <a href="#web">Pagina Web</a>
+                <a href="#gee">Aplicacion de Google Earth</a>
+                <a href="#Tecnologias">Tecnologias</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+         </div>
+    </header>
+    <div id="int" class="intro">
+        <h1>David Koch Torres Septien</h1>
+        <h4>Estudiante de Ing. en Sistemas</h4>
+        <p>Soy un estudiante entusiasta en el ITESO, actualmente cursando mi 7mo semestre.
+             Mi pasión se centra en la programación de bajo nivel y la aviación.  </p>
+    </div>
+        
+    <div id="proyectos">
+        <h2 class="sections">Proyectos</h2>
+        <div id="casa" class="item-proyecto">
+            
+            <div class="description">
+                <h3 class="title">Casa inteligente</h2>
+                <p>
+                    Casa a escala que puede ser controlada mediante comandos de voz desde un teléfono celular.
+                    Para lograr esto, utilizamos un FPGA (programado en vivado), MIT App Inventor y un módulo Bluetooth. 
+                    Establecimos una comunicación serial entre el FPGA y el teléfono celular, lo que nos permite controlar la casa 
+                    a través de una interfaz de usuario personalizada en la aplicación móvil. 
+                </p>
+            </div>
+            <iframe id="viedo-casa" class="media" width="560" height="315" src="https://www.youtube.com/embed/Dj2g30fIt6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div id="barco" class="item-proyecto">
+            <div class="description">
+                <h3 class="title">Barco escala</h3>
+                <p >Barco que puede ser controlada mediante una aplicación en un teléfono celular. Para este proyecto, 
+                    utilizamos un microcontrolador tipo 8051 y programamos en ensamblador. La comunicación entre la aplicación y la barca se realiza a
+                    través de una conexión serial. Con nuestra aplicación personalizada,
+                    los usuarios pueden controlar de forma remota la dirección, velocidad y otras funciones de la barca desde su teléfono celula </p>
+                   
+                </div>
+                <iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/h9CEXLG92QQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id = "web" class="item-proyecto">
+            <div class="description">
+                <h3 class="title"><a href="https://github.com/xEfren548/DASW_DevCollab">Pagina Web</a> </h3>
+                <p >Plataforma web sencilla para la colaboración en proyectos. Esta plataforma incluye características esenciales como registro de usuarios utilizando tokens, chat y capacidad de búsqueda de proyectos.
+                Nuestro objetivo fue crear una experiencia fácil de usar que permita a las personas conectarse, colaborar y comunicarse de manera efectiva en proyectos compartido
+                </p>
+            </div>
+             <img class= "media" src="./images/web3.png" alt="web3">
+            <source>
+            
+        </div>
+        <div id="gee" class="item-proyecto">
+            <div class="description">
+                <h3 class="title"><a href="https://geoiteso.users.earthengine.app/view/aaaa-plataforma-beta">Aplicacion de Google Earth</a></h3>
+                <p >Aplicación que te permite monitorear los cambios de estado en el Bosque de la Primavera en Jalisco.
+                    Mediante el uso de teledetección remota a partir de los satélites Landsat, visualizamos los cambios a lo largo del tiempo en esta área protegida.
+                    Utilizamos índices como el Índice de Vegetación de Diferencia Normalizada (NDVI) y el Índice de Quemaduras de Vegetación Normalizado (NBRT) para analizar y
+                    detectar incendios forestales. Nuestra aplicación te brinda una visión detallada de los cambios en la vegetación 
+                    para eventualmente poder preservar y proteger el Bosque de la Primavera de manera efectiva.
+                </p>
+            </div>
+            
+             <img class="media" src="./images/GEE2.png" alt="NBRT">
+        </div>
+   </div>
+
+    <h2 id="Tecnologias" class="sections" >Tecnologias </h2>
+    <div class="Tecnologias">
+        <ul>
+        
+            <li>Embebidos</li>
+            <ul>
+                <li>FGPA / Vivado</li>
+                <li>8051 / Ensamblador</li>
+            </ul>
+            <li>JavaScript</li>
+            <ul>
+                <li>Bootstrap</li>
+                <li>Node.js</li>
+                <li>Google Earth Engine</li>
+            </ul>
+            <li>Microsoft Office</li>
+            <ul>
+                <li>Excel</li>
+                <li>Word</li>
+                <li>PowerPoint</li>
+            </ul>
+            <li>C / C++</li>
+        </ul>
+
+    </div>
+    <div class="icons">
+        <span class="icon-icon1"></span>
+        <span class="icon-icon2"></span>
+        <span class="icon-icon3"></span>
+        <span class="icon-icon4"></span>
+        <span class="icon-icon5"></span>
+        
+    </div>
+    <footer>
+        <h2 class="sections">Contacto</h2>
+    <ul id="contacto">
+        <li>David.Koch@iteso.mx</li>
+        <li>3321542385</li>
+    </ul>
+    </footer>
+
+
+    
+</body>
+</html>

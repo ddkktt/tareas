@@ -1,0 +1,17 @@
+{
+  "name": "paginapresentacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no error\" && exit 1",
+    "styles" : "sass src:assets --no-source-map",
+    "styles:dev" : "sass src:assets --watch",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}
