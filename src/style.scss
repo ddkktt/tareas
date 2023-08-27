@@ -64,22 +64,28 @@ nav {
   }
 }
 
-.media {
+.media-class{
   margin-top: 5%;
   margin-left: 5%;
-  max-width: 50%;
+  height: 100%;
+  width: 50%;
 }
 
 .description {
   width: 50%;
   height: auto;
 }
+.media{
+  width: 80%;
+  max-height: 315px;
+  height: 800px;
+}
 
 .item-proyecto {
   display: flex;
   flex-flow: row;
   width: 100%;
-  max-height: 30%;
+  max-height: 40%;
   margin-top: 2%;  
 }
 
@@ -105,6 +111,10 @@ a:visited {
   .item-proyecto {
     flex-flow: column;
   }
+  .media-class{
+    margin:5%;
+    width: 90%;
+  }
   
   .description {
     width: 100%;
@@ -117,10 +127,18 @@ a:visited {
 }
 
 @media (max-width: 800px) {
+  
     .dropbtn {
+      @if $is-dark-mode {
+        color: $font-color;
+
+      }
+      @else{
+        color: $bckg-color ;
+      }
         background-color:$secondary-color  ;
         padding: 10px;
-        color: $bckg-color ;
+        
         font-weight: bold;
       }
 
@@ -146,7 +164,15 @@ a:visited {
       z-index: 1;
 
       a {
-        color: $secondary-color;
+        @if $is-dark-mode {
+          color: $font-color;
+  
+        }
+        @else{
+          color: $secondary-color;
+
+        }
+        
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -159,21 +185,8 @@ a:visited {
 
 }
 
-$icon-images: (
-  icon1: '../images/c_icon.png',
-  icon2: '../images/GEEIcon.jpg',
-  icon3: '../images/ITESO.svg',
-  icon4: '../images/jsicon.png'
- 
-);
 
 
-@each $icon, $path in $icon-images {
-    .icon-#{$icon} {
-      background-image: url('#{$path}');
-      width: 24px;  
-      height: 24px; 
-      display: inline-block;
-    }
-  }
+
+
   
