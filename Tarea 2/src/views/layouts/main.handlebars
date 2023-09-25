@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form>
+        <input type="text" id="searchV" placeholder="Enter text...">
+        <button type="reset" onclick= "search()">
+            Search
+          </button>
+
+    </form>
+    
+    <script>
+    function search() {
+        var inputValue = document.getElementById("searchV").value;
+        url = 'http://localhost:3000/news'
+        
+        console.log(inputValue);
+        location.href= url +'?q='+inputValue
+    }
+    </script>
+
+    {{{body}}}
+    
+    
+</body>
+</html>
