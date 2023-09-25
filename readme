@@ -1,0 +1,5 @@
+npm install
+npm init
+npm install dotenv
+npm install handlebars
+npm run
